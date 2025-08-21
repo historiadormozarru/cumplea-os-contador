@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Te pillé!</title>
+    <title>¡Sorpresa!</title>
     <!-- Enlaza el archivo CSS para los estilos -->
     <link rel="stylesheet" href="src/styles/css-cum-adri.css">
     <script src="src/utils/efectos-cum-adri"></script>
