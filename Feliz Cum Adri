@@ -9,12 +9,21 @@
     <script src="src/utils/efectos-cum-adri"></script>
 </head>
 <body>
-
+div class="main-container">
+        <div class="main-content">
     <h1 id="titulo">¡Atención! ¡El gran momento se acerca!</h1>
-   
+
+    <div class="right-sidebar">
+        <div id="bloque-lateral-derecho">
+                
     <!-- Aquí se inserta la imagen circular -->
-    <img id="imagen-circulo" src="https://videos.openai.com/vg-assets/assets%2Ftask_01k35zc8v8egda4t7fdkep8fmr%2F1755768685_img_0.webp?st=2025-08-21T08%3A13%3A15Z&se=2025-08-27T09%3A13%3A15Z&sks=b&skt=2025-08-21T08%3A13%3A15Z&ske=2025-08-27T09%3A13%3A15Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=kJGb54d%2FP%2BEdzDWisNb8i6RIYaA9fejFTyUfOnmTAaQ%3D&az=oaivgprodscus" alt="Imagen de broma">
-   
+        <img id="imagen-circulo" src="https://videos.openai.com/vg-assets/assets%2Ftask_01k35zc8v8egda4t7fdkep8fmr%2F1755768685_img_0.webp?st=2025-08-21T08%3A13%3A15Z&se=2025-08-27T09%3A13%3A15Z&sks=b&skt=2025-08-21T08%3A13%3A15Z&ske=2025-08-27T09%3A13%3A15Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=kJGb54d%2FP%2BEdzDWisNb8i6RIYaA9fejFTyUfOnmTAaQ%3D&az=oaivgprodscus" alt="Imagen de broma">
+</div>
+            <div id="segundo-bloque-lateral">
+                <!-- Segunda imagen cuadrada -->
+                <img id="imagen-cuadrada" src="https://m.media-amazon.com/images/M/MV5BYzViMTkxZjgtOWJjMi00Njc2LWE0YzEtOTNkYjc5N2NiNzI0XkEyXkFqcGc@._V1_.jpg" alt="Segunda imagen de broma">
+            </div>
+        </div>   
     <div id="contador">
         <div>
             <span id="semanas"></span>
@@ -39,7 +48,8 @@
     </div>
    
     <div id="mensaje-final" class="hidden"></div>
-
+    </div>
+</div>
     <!-- Enlaza el archivo JavaScript para la lógica del contador -->
     <script src="script.js"></script>
 </body>
