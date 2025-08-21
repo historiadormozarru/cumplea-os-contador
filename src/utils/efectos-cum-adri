@@ -1,6 +1,7 @@
-// Establece la fecha de finalización (4 semanas y 3 días a partir de la fecha actual)
-const fechaFin = new Date();
-fechaFin.setDate(fechaFin.getDate() + (4 * 7) + 3); 
+// Establece la fecha de finalización: 13 de septiembre de 2025 a las 13:00
+const fechaFin = new Date('2025-09-13T13:00:00');
+
+// (El resto de tu código no necesita ser modificado)
 
 // Actualiza el contador cada segundo
 const intervalo = setInterval(() => {
