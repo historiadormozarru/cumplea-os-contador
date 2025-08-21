@@ -1,0 +1,40 @@
+// Establece la fecha de finalización (4 semanas y 3 días a partir de la fecha actual)
+const fechaFin = new Date();
+fechaFin.setDate(fechaFin.getDate() + (4 * 7) + 3); 
+
+// Actualiza el contador cada segundo
+const intervalo = setInterval(() => {
+    const ahora = new Date().getTime();
+    const distancia = fechaFin - ahora;
+    
+    // Si el contador llega a cero, activa la broma
+    if (distancia < 0) {
+        clearInterval(intervalo); // Detiene el contador
+        document.getElementById('titulo').textContent = "¡Sorpresa! ¡Caíste en la broma!";
+        document.getElementById('contador').classList.add('hidden'); // Oculta el contador
+        document.getElementById('mensaje-final').textContent = "Este contador no era real, pero tu cara de sorpresa seguro que lo es. ¡Comparte tu reacción!";
+        document.getElementById('mensaje-final').classList.remove('hidden'); // Muestra el mensaje de la broma
+        return;
+    }
+    
+    // Cálculos para convertir la distancia en semanas, días, horas, etc.
+    const _segundo = 1000;
+    const _minuto = _segundo * 60;
+    const _hora = _minuto * 60;
+    const _dia = _hora * 24;
+    const _semana = _dia * 7;
+    
+    const semanas = Math.floor(distancia / _semana);
+    const dias = Math.floor((distancia % _semana) / _dia);
+    const horas = Math.floor((distancia % _dia) / _hora);
+    const minutos = Math.floor((distancia % _hora) / _minuto);
+    const segundos = Math.floor((distancia % _minuto) / _segundo);
+    
+    // Muestra los valores calculados en los elementos de la página
+    document.getElementById('semanas').textContent = semanas;
+    document.getElementById('dias').textContent = dias;
+    document.getElementById('horas').textContent = horas;
+    document.getElementById('minutos').textContent = minutos;
+    document.getElementById('segundos').textContent = segundos;
+    
+}, 1000); // Se ejecuta cada 1 segundo
