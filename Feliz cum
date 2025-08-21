@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Te pillé!</title>
+    <!-- Enlaza el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="titulo">¡Atención! ¡El gran momento se acerca!</h1>
+   
+    <!-- Aquí se inserta la imagen circular -->
+    <img id="imagen-circulo" src="URL_DE_TU_IMAGEN_AQUI" alt="Imagen de broma">
+   
+    <div id="contador">
+        <div>
+            <span id="semanas"></span>
+            <span class="etiqueta">Semanas</span>
+        </div>
+        <div>
+            <span id="dias"></span>
+            <span class="etiqueta">Días</span>
+        </div>
+        <div>
+            <span id="horas"></span>
+            <span class="etiqueta">Horas</span>
+        </div>
+        <div>
+            <span id="minutos"></span>
+            <span class="etiqueta">Minutos</span>
+        </div>
+        <div>
+            <span id="segundos"></span>
+            <span class="etiqueta">Segundos</span>
+        </div>
+    </div>
+   
+    <div id="mensaje-final" class="hidden"></div>
+
+    <!-- Enlaza el archivo JavaScript para la lógica del contador -->
+    <script src="script.js"></script>
+</body>
+</html>
