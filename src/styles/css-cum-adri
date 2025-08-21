@@ -1,0 +1,69 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+    animation: fadeIn 2s; /* Animación de entrada suave */
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #d9534f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen circular */
+#imagen-circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Propiedad clave para hacerla circular */
+    object-fit: cover; /* Para que la imagen no se deforme */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor del contador */
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 2.5em;
+}
+
+/* Estilo para las etiquetas de texto (Semanas, Días, etc.) */
+.etiqueta {
+    font-size: 0.8em;
+    color: #666;
+    display: block;
+}
+
+/* Estilo para el mensaje final de la broma */
+#mensaje-final {
+    font-size: 1.5em;
+    color: #337ab7;
+    margin-top: 20px;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Animación para un efecto de desvanecimiento al cargar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
