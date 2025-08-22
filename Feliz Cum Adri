@@ -6,7 +6,7 @@
     <title>¡Sorpresa!</title>
     <!-- Enlaza el archivo CSS para los estilos -->
     <link rel="stylesheet" href="src/styles/css-cum-adri.css">
-    <script src="src/utils/efectos-cum-adri"></script>
+    
 </head>
 <body>
 div class="main-container">
@@ -51,6 +51,6 @@ div class="main-container">
     </div>
 </div>
     <!-- Enlaza el archivo JavaScript para la lógica del contador -->
-    <script src="script.js"></script>
+    <script src="src/utils/efectos-cum-adri"></script>
 </body>
 </html>
